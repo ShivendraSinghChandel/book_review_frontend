@@ -1,1 +1,1 @@
-export const BASE_URL = "https://vercel.com/shivendra-singh-chandels-projects/book-review-server/"
+export const BASE_URL = "https://book-review-server-sigma.vercel.app/"
