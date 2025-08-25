@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:8000/"
+export const BASE_URL = "https://vercel.com/shivendra-singh-chandels-projects/book-review-server/"
