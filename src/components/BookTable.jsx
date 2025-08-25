@@ -72,7 +72,8 @@ const BookTable = () => {
     const handleLogout = () => {
     localStorage.removeItem("token");
     setUserRole(null); 
-    navigate("/login");
+    window.location.href = "/login";
+
   };
 
     return(

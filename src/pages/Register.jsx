@@ -21,9 +21,12 @@ const Register = () =>{
             password
         });
 
-        if (response.status === 200) {
+        if (response?.status === 200) {
             localStorage.setItem("token", response.data.token);
             navigate("/");
+        }
+        else{
+            alert(response?.data?.message)
         }
     } catch (err) {
         console.error(err);

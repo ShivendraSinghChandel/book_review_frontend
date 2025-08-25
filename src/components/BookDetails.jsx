@@ -92,6 +92,7 @@ const BookDetails = () => {
         id: fbId,
         rating: editRating,
         comment: editComment,
+        book_id:id
       });
       setEditingId(null);
       setEditRating("");
@@ -108,7 +109,7 @@ const BookDetails = () => {
   const handleDeleteFeedback = async (fbId) => {
     if (!window.confirm("Are you sure?")) return;
     try {
-      const res = await axios.delete(`${BASE_URL}feedback/delete/${fbId}`);
+      const res = await axios.delete(`${BASE_URL}feedback/delete/${fbId}/${id}`);
       if (res.status === 200) {
         fetchBookDetails();
         fetchYourFeedbacks();

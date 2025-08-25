@@ -20,7 +20,7 @@ const App = () =>{
         <Route path="/register" element={!token ? <Register /> : <Navigate to="/" />} />
 
         <Route path="/" element={
-            <ProtectedRoute allowedRoles={["admin","user"]}>
+            <ProtectedRoute allowedRoles={["user"]}>
                 <BookTable />
             </ProtectedRoute>
         } />
