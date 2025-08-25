@@ -13,8 +13,8 @@ const AdminDashboard = () => {
 
     const handlelogout = () => {
     localStorage.removeItem("token");
-    window.location.href = "/login";
-  };
+    navigate("/login", { replace: true })
+   };
 
 
     return(
